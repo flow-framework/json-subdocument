@@ -1,0 +1,45 @@
+{
+    "title": "JSON sub-document",
+    "description": "Provides paths to multiple documents and for each document a group of sub-documents to be extracted from these.",
+    "type": "array",
+    "items": {
+        "title": "JSON document",
+        "type": "object",
+        "required": [
+            "path",
+            "children"
+        ],
+        "properties": {
+            "path": {
+                "description": "Path to the JSON file",
+                "type": "string"
+            },
+            "children": {
+                "title": "Subdocuments",
+                "type": "array",
+                "items": {
+                    "title": "Subdocument",
+                    "description": "Object defining the subdocument",
+                    "type": "object",
+                    "required": [
+                        "path"
+                    ],
+                    "properties": {
+                        "path": {
+                            "description": "Path to the destination JSON file",
+                            "type": "string"
+                        },
+                        "name": {
+                            "description": "Destination file name",
+                            "type": "string"
+                        },
+                        "structure": {
+                            "type": "object",
+                            "title": "Subdocument's structure (JSON object)"
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
