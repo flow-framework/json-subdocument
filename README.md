@@ -19,6 +19,7 @@ This project uses the following modules:
 - [Jest](https://jestjs.io/) for testing
 - Node.js [`fs/promises`](https://nodejs.org/api/fs.html#fs_promises_api) module for File System interaction
 - AJV schema validation gets executed by another script, not present in this repository. We will update with the link to it once it becomes Open Source.
+- [Gulp.js](https://gulpjs.com) Functions for reading and writing files in a pipeline method
 
 ## Folder structure
 
